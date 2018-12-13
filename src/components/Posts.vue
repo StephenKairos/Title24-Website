@@ -32,3 +32,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.posts {
+    margin-top: 80px;
+} 
+</style>
