@@ -16,7 +16,7 @@
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
-import Posts from './components/Posts.vue'
+// import Posts from './components/Posts.vue'
 import Contact from './components/Contact.vue'
 import Landing from './components/Landing.vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -32,7 +32,6 @@ export default {
   components: {
     Header,
     Footer,
-    Posts,
     Contact,
     Landing
   }
