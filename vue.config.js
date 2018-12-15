@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-  baseUrl: '/title24-website'
+  baseUrl: 'http://www.skreyes.me/title24-website'
 }
