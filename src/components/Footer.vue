@@ -1,25 +1,12 @@
 <template>
-  <div class="header">
+  <div class="footer">
     <!-- Navbar Code -->
-    <b-navbar toggleable="md" type="dark" variant="info" fixed="bottom">
-
-      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
-      <b-navbar-brand href="#">{{ title }}</b-navbar-brand>
-
-      <b-collapse is-nav id="nav_collapse">
-
-        <b-navbar-nav>
-          <b-nav-item href="#">Link</b-nav-item>
-          <b-nav-item href="#" disabled>Disabled</b-nav-item>
-        </b-navbar-nav>
-
+    <b-navbar style="background-color: #0088cc;" toggleable="md" type="dark">
+      <!-- <b-navbar-brand>{{ title }}</b-navbar-brand> -->
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-text>© All rights reserved. Made with ❤️ by S. Reyes</b-nav-text>
+          <b-nav-text center>© All rights reserved. Made with ❤️ by S. Reyes</b-nav-text>
         </b-navbar-nav>
-
-      </b-collapse>
     </b-navbar>
   </div>
 </template>
@@ -34,5 +21,8 @@ export default {
 </script>
 
 <style>
-/* Nothing for now */
+.footer {
+  background-color: #0088cc;
+  margin-top: 50px;
+}
 </style>

@@ -1,27 +1,17 @@
 <template>
-  <div class="contact">
-    <h1>{{ title }}</h1>
-    <h4>Request a quote or make an inquiry</h4>
-    
-    <b-row>
-      <b-col md="8" offset="2">
-        <p>We welcome the opportunity to talk to you about how we can help with your latest project.  Whether you want a free, no obligation consultation or just a quick chat please give us a call at (510) 402-4513<br/>
-        Or complete the form below and we’ll get right back to you.</p>
-      </b-col>
-    </b-row>
-
+  <div class="home">
+    <!-- <h1>{{ title }}</h1> -->
     <b-row class="background-form">
-      <b-col md="6" offset-md="3">
+      <b-col md="4" offset-md="7">
         <b-card class="front-form">
           <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-            <h2>Make an enquiry.</h2>
-            <h4>We'll reply today - we promise!</h4>
+            <h2>Let's Get Started!</h2>
+            <p>Call us @ (510) 402-4513 or fill in the form below for some advice on your latest project.</p>
             <b-form-group id="infoInputGroup1"
                           label-for="infoInput1">
               <b-form-textarea id="textarea1"
                                v-model="form.text"
-                               placeholder="How can we help? *"
-                               required
+                               placeholder="How can we help?"
                                :rows="3"
                                :max-rows="6">
               </b-form-textarea>          
@@ -31,14 +21,7 @@
                             type="text"
                             v-model="form.name"
                             required
-                            placeholder="Name *">
-              </b-form-input>
-            </b-form-group>
-            <b-form-group>
-              <b-form-input id="companyInput"
-                            type="text"
-                            v-model="form.company"
-                            placeholder="Company">
+                            placeholder="Your name...">
               </b-form-input>
             </b-form-group>
             <b-form-group>
@@ -46,7 +29,7 @@
                             type="text"
                             v-model="form.number"
                             required
-                            placeholder="Telephone *">
+                            placeholder="Contact Number...">
               </b-form-input>
             </b-form-group>
             <b-form-group>
@@ -54,11 +37,10 @@
                               type="email"
                               v-model="form.email"
                               required
-                              placeholder="Email Address *">
+                              placeholder="Email address...">
               </b-form-input>
             </b-form-group>
-            <p>Fields marked with * are mandatory</p>
-            <b-button type="submit" variant="danger">Send</b-button>
+            <b-button type="submit" variant="danger">Click to Complete Enquiry</b-button>
           </b-form>
         </b-card>
       </b-col>
@@ -68,19 +50,18 @@
 
 <script>
 export default {
-  name: 'contact',
+  name: 'home',
   data () {
     return {
-      title: "Contact Us",
-      show: true,
+      title: "Home",
       form: {
         text: '',
         number: '',
         email: '',
         name: '',
-        company: '',
         checked: []
-      }
+      },
+      show: true
     }
   },
   methods: {
@@ -104,7 +85,14 @@ export default {
 </script>
 
 <style>
-.contact {
+.front-form {
+  margin: 5%;
+}
+.background-form {
+  background: url("../../public/background-1.jpg");
+}
+
+.home {
     margin-top: 50px;
 } 
 </style>

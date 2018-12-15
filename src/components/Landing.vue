@@ -1,7 +1,7 @@
 <template>
   <div class="landing">
     <h1>{{ title }}</h1>
-    Example Filler Text
+    <h5>{{ subtitle }}</h5>
   </div>
 </template>
 
@@ -9,7 +9,8 @@
 export default {
   name: 'posts',
   props: {
-    title: String
+    title: String,
+    subtitle: String
   }
 }
 </script>
