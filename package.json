@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "push-dir --dir=docs --branch=gh-pages"
+    "deploy": "push-dir --dir=title24-website --branch=gh-pages"
   },
   "dependencies": {
     "axios": "^0.18.0",
