@@ -6,7 +6,7 @@
       <img alt="Vue logo" src="./assets/logo.png"> 
     -->
     <Landing title="TITLE 24 CALCULATIONS AND REPORTS" subtitle="The best place to order your energy compliant reports in California"/>
-
+    
     <router-view></router-view>
     <Footer title="Footer"/>
   </div>
